@@ -1,4 +1,4 @@
-osc-record
+My abstraction & modules library to use with Max from Cycling74
 ==========
 
-osc data recorder
+my max abstractions and modules.
