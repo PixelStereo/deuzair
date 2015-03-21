@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 775.0, 52.0, 421.0, 493.0 ],
+		"rect" : [ 775.0, 52.0, 403.0, 519.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,42 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-5",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 78.0, 65.099991, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 107.5, 441.599976, 218.0, 20.0 ],
+					"text" : "s #1/receive/data"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-2",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 77.0, 439.099976, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -50,8 +86,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.0, 154.200012, 51.0, 20.0 ],
-					"presentation_rect" : [ 436.0, 140.0, 0.0, 0.0 ],
+					"patching_rect" : [ 64.0, 154.200012, 60.0, 20.0 ],
 					"text" : "gate"
 				}
 
@@ -66,7 +101,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 54.0, 368.599976, 48.0, 20.0 ],
-					"presentation_rect" : [ 436.0, 276.0, 0.0, 0.0 ],
 					"text" : "gate"
 				}
 
@@ -81,7 +115,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 107.5, 368.599976, 79.0, 20.0 ],
-					"presentation_rect" : [ 93.0, 335.0, 0.0, 0.0 ],
 					"text" : "prepend port"
 				}
 
@@ -109,8 +142,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 107.5, 409.599976, 107.0, 20.0 ],
-					"text" : "udpreceive 11111"
+					"patching_rect" : [ 107.5, 409.599976, 155.0, 20.0 ],
+					"text" : "udpreceive 11111 @quiet 1"
 				}
 
 			}
@@ -122,7 +155,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.0, 441.599976, 223.0, 20.0 ],
+					"patching_rect" : [ 28.0, 469.599976, 223.0, 20.0 ],
 					"text" : "print #1/receive"
 				}
 
@@ -137,7 +170,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 28.0, 409.599976, 45.0, 20.0 ],
-					"presentation_rect" : [ 355.0, 337.0, 0.0, 0.0 ],
 					"text" : "gate"
 				}
 
@@ -178,7 +210,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.0, 67.599991, 218.0, 20.0 ],
+					"patching_rect" : [ 105.0, 67.599991, 218.0, 20.0 ],
 					"text" : "r #1/send/data"
 				}
 
@@ -383,6 +415,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -450,6 +500,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
