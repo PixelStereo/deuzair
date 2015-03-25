@@ -1,4 +1,3 @@
-My abstraction & modules library to use with Max from Cycling74
+Collection of abstractions and modules for Max (Cycling74)
 ==========
-
-my max abstractions and modules.
+Add the max-package as package to max 6
