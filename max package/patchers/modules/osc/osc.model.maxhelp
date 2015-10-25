@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 10,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 159.0, 455.0, 640.0, 480.0 ],
+		"rect" : [ 868.0, 79.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -33,11 +33,10 @@
 					"border" : 1,
 					"id" : "obj-2",
 					"maxclass" : "bpatcher",
-					"name" : "osc.module.maxpat",
+					"name" : "osc.view.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 70.0, 486.0, 63.0 ],
-					"presentation_rect" : [ 4.0, 71.0, 0.0, 0.0 ]
+					"patching_rect" : [ 8.0, 70.0, 486.0, 63.0 ]
 				}
 
 			}
@@ -47,10 +46,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-25",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.0, 91.5, 107.0, 20.0 ],
-					"text" : "osc.module /osc.2"
+					"text" : "osc.model /osc.2"
 				}
 
 			}
@@ -60,10 +60,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-24",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.0, 29.5, 107.0, 20.0 ],
-					"text" : "osc.module /osc.1"
+					"text" : "osc.model /osc.1"
 				}
 
 			}
@@ -73,7 +74,7 @@
 					"border" : 1,
 					"id" : "obj-1",
 					"maxclass" : "bpatcher",
-					"name" : "osc.module.maxpat",
+					"name" : "osc.view.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 8.0, 486.0, 63.0 ]
@@ -83,15 +84,8 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "osc.module.maxpat",
-				"bootpath" : "/Volumes/data/GITs/osc-record/max package/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "osc.view.maxpat",
-				"bootpath" : "/Volumes/data/GITs/osc-record/max package/patchers",
+				"bootpath" : "/Users/reno/Documents/GITs/deuzair/max package/patchers/modules/osc",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -99,13 +93,13 @@
 , 			{
 				"name" : "var.maxpat",
 				"bootpath" : "/Applications/Max 6.1/examples/max-tricks/send-receive-tricks/lib",
-				"patcherrelativepath" : "../../../../../../Applications/Max 6.1/examples/max-tricks/send-receive-tricks/lib",
+				"patcherrelativepath" : "../../../../../../../../../Applications/Max 6.1/examples/max-tricks/send-receive-tricks/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "osc.model.maxpat",
-				"bootpath" : "/Volumes/data/GITs/osc-record/max package/patchers",
+				"bootpath" : "/Users/reno/Documents/GITs/deuzair/max package/patchers/modules/osc",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
